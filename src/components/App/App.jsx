@@ -20,7 +20,7 @@ const App = () => {
       LOCALSTORAGE_KEY,
       JSON.stringify(contacts)
     );
-  }, [contacts, filter]);
+  }, [contacts]);
 
   const addContact = newContact => {
     setContacts(prevState => [...prevState, newContact]);
